@@ -10,14 +10,14 @@ def validateFilename(filename: str) -> bool:
 
 
 def validateArgs(args: list[str]) -> bool:
-    filename = os.path.basename(__file__)
-    usage = filename + " <asm_file>"
+    filename = args[0]
+    usage = filename + " <asm_file> <output_file>"
     argc = len(args)
-    if argc < 2:
+    if argc < 3:
         print("Not enough arguments")
         print(usage)
         return False
-    elif argc == 2:
+    elif argc == 3:
         return validateFilename(args[1])
     else:
         print("Invalid arguments")

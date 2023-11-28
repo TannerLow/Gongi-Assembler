@@ -12,7 +12,7 @@ def parseTokens(lexTokenSets: list[list[list[Token | str]]]) -> list[Instruction
         elif tokenSet[0][0] == Token.LABEL:
             instructions.append(Label(tokenSet))
         else:
-            print("Parser encountered erro TODO fail gracefully")
+            print("Parser encountered error TODO fail gracefully")
             exit(3)
     return instructions
 

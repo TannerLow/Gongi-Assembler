@@ -35,7 +35,8 @@ operands = {
         "nil",
         "ip",
         "mem",
-        "pma"
+        "pma",
+        "ex1"
     ],
     "dst": [
         "r1",
@@ -46,7 +47,8 @@ operands = {
         "bp",
         "ptr",
         "mem",
-        "pma"
+        "pma",
+        "ex1"
     ]
 }
 
@@ -83,4 +85,5 @@ registerCodes = {
     "mem": "1001",
     "immediate": "1010",
     "pma": "1011",
+    "ex1": "1100",
 }

@@ -16,6 +16,7 @@ def assembleInstructions(instructions: list[Instruction | Label]) -> list[str]:
             hexCode = instruction.assemble()
         
         if not hexCode:
+            instruction.print()
             print("[Error] Failed during assembly TODO fail gracefully")
             exit(4)
         

@@ -1,3 +1,4 @@
+; working as of 12/4/23
 ; pressing A on the keybaord will write an 'a' to the screen
 mov ex1, 0b001  ; write char to video mem, not colors 
 mov r2, 0xFF    ; invalid key data
